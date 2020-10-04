@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.TambahActivity">
+
+    <RelativeLayout
+        android:background="@color/blue_muda"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <TextView
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Tambahkan Mahasiswa"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/nama_pengguna"
+            android:layout_toRightOf="@+id/foto_profil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:id="@+id/nim"
+            android:text="Aplikasi Mahasiswa Magang"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/foto_profil"
+            android:layout_below="@id/nama_pengguna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="16dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <EditText
+        android:background="@android:color/white"
+        android:hint="NIM"
+        android:paddingLeft="20dp"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <EditText
+        android:layout_marginTop="15dp"
+        android:background="@android:color/white"
+        android:hint="Nama Mahasiswa"
+        android:paddingLeft="20dp"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <Spinner
+        android:layout_marginTop="15dp"
+        android:paddingLeft="20dp"
+        android:id="@+id/sp_name"
+        android:textSize="15sp"
+        android:background="@android:color/white"
+        android:entries="@array/kelamin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></Spinner>
+
+    <EditText
+        android:layout_marginTop="15dp"
+        android:background="@android:color/white"
+        android:hint="Alamat"
+        android:paddingLeft="20dp"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+    <Spinner
+        android:layout_marginTop="15dp"
+        android:paddingLeft="20dp"
+        android:textSize="15sp"
+        android:background="@android:color/white"
+        android:entries="@array/kampus"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></Spinner>
+    <Spinner
+        android:layout_marginTop="15dp"
+        android:paddingLeft="20dp"
+        android:textSize="15sp"
+        android:background="@android:color/white"
+        android:entries="@array/jurusan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></Spinner>
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/photo"
+            android:layout_marginRight="10dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_launcher_background" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <EditText
+                android:paddingRight="20dp"
+                android:editable="false"
+                android:id="@+id/edt_photo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@android:color/transparent"
+                android:hint="ex : Images.jpg"
+                android:paddingLeft="20dp"
+                android:textSize="12sp" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <Button
+        android:layout_marginBottom="50dp"
+        android:paddingRight="10dp"
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_otp"
+        android:textColor="#fff"
+        android:text="Tambah"
+        android:textAllCaps="false"/>
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

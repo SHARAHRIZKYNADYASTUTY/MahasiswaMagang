@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#18a3fe</color>
+    <color name="colorPrimaryDark">#4c84ff</color>
+    <color name="colorAccent">#D81B60</color>
+    <!--Color Button0-->
+    <color name="blue_tua">#4c84ff</color>
+    <color name="blue_muda">#18a3fe</color>
+</resources>

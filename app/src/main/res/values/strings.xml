@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">MahasiswaMagang</string>
+    <string-array name="kampus">
+        <item>Politeknik Negeri Jember</item>
+        <item>UNEJ</item>
+    </string-array>
+    <string-array name="kelamin">
+        <item>Laki-laki</item>
+        <item>Perempuan</item>
+    </string-array>
+    <string-array name="jurusan">
+        <item>TIF</item>
+        <item>MIF</item>
+        <item>TKK</item>
+        <item>MNA</item>
+    </string-array>
+</resources>
+
